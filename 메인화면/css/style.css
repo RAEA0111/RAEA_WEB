@@ -1,0 +1,274 @@
+
+header {}
+header .util {
+    width: 100%;
+    height: 48px;
+    background-color: var(--main);
+}
+header .util ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .util ul li {}
+header .util ul li a {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header .main-menu .icon-box {
+    padding: 32px;
+}
+header .main-menu .icon-box a {
+    font-size: 32px;
+}
+header .main-menu nav {}
+header .main-menu #gnb {
+    display: flex;
+    align-items: center;
+}
+header .main-menu #gnb li {}
+header .main-menu #gnb li a {
+    display: inline-block;
+    padding: 0 40px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* 헤더 배경색 설정 */
+    padding: 20px; /* 필요에 따라 패딩 값 조정 */
+    z-index: 100; /* 필요에 따라 z-index 값 조정 */
+  }
+
+/* container */
+.container {
+    width: 800px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+/* section - main */
+#main {}
+#main .slide { }
+#main .slide .item {
+    display: flex;
+    align-items: center;
+}
+#main .slide .item img { 
+    width: 100%; 
+    height: 480px;
+    object-fit: cover;
+}
+/* 슬라이드 - 화살표 */
+.slick-prev:before, .slick-next:before {
+    color: lightgray;
+    font-size: 24px;
+}
+/* 왼쪽 화살표 */
+.slick-prev {
+    position: absolute;
+    left: -5%;
+    /* z-index: 10; */
+}
+/* 오른쪽 화살표 */
+.slick-next {
+    position: absolute;
+    right: -5%;
+    /* z-index: 10; */
+}
+
+/* section - recent */
+#recent { background-color: var(--main); }
+#recent .card-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+}
+#recent .card-list .card {
+    width: 220px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+#recent .card-list .card .img-box {
+    height: 180px;
+}
+#recent .card-list .card .img-box a {}
+#recent .card-list .card .img-box a img { 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+#recent .card-list .card .content-box {
+    padding: 12px;
+}
+#recent .card-list .card .content-box .title { 
+    text-align: center;
+    margin-bottom: 10px;
+}
+#recent .card-list .card .content-box .info { 
+    font-size: 12px; 
+    margin-bottom: 10px;
+}
+#recent .card-list .card .content-box .etc-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#recent .card-list .card .content-box .etc-box .item {}
+#recent .card-list .card .content-box .etc-box .item .date { 
+    font-size: 14px;
+    color: lightgray;
+}
+#recent .card-list .card .content-box .etc-box .item a {}
+
+/* section - info1 */
+section.info {
+     display: flex;
+     align-items: center; 
+     
+    }
+section.info .img-box{
+     width: 50%; 
+     height: 400px;
+     padding: 40px;
+    }
+section.info .img-box a{}
+section.info .img-box a img{ 
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+}
+
+section.info .content-box {
+    width: 50%;
+    height: 400px;
+    padding: 40px;
+    }
+section.info .content-box .inner{
+    position: relative;
+    height: 100%;
+}
+section.info .content-box .inner .info-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+section.info .content-box .inner .info-content {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+section.info .content-box .inner .btn-box {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--sub);
+    border-radius: 10px; 
+}
+
+#info2 {
+    flex-direction: row-reverse;
+    background-color: var(--main);
+}
+
+/* section - map */
+#map {
+    margin: 20px auto;
+ 
+    padding: 12px 24px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    }
+
+
+.my-place{
+    border: 1px solid gray;
+    background-color: white;
+    padding: 6px 24px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    background-color: #232323;
+    padding: 50px 0px 20px;
+    color: white;
+}
+footer .inner {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .inner .site-map {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 160px;
+}
+footer .inner .site-map ul {}
+footer .inner .site-map ul li{
+    padding: 20px 0;
+}
+footer .inner .site-map ul li a{}
+
+footer .inner .family {}
+footer .inner .family select{
+    min-width: 160px;
+    height: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+footer .copy { text-align: center;}
+
+/* 사이드바 */
+.side-bar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    height: 100%;
+    width: 300px;
+    background-color: var(--sub);
+    z-index: 10;
+    transition: all 1s;
+    padding: 20px;
+}
+/* 사이드바 오픈 */
+.side-bar.active {
+    right: 0;
+}
+.side-bar .btn-box {
+    display: flex;
+    justify-content: flex-end;
+}
+.side-bar .btn-box a {
+    font-size: 32px;
+    color: white;
+}

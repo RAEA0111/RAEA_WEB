@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- slick 이미지 슬라이드 -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- 사이드바-->
+    <div class="side-bar">
+        <div class="btn-box">
+            <a href="#"id="btn-close"><i class="fa fa-times"></i></a>
+        </div>
+
+    </div>
+    <!-- header -->
+    <header>
+        <div class="util">
+            <ul>
+                <li><a href="/login">로그인</a></li>
+                <li><a href="/signup">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="main-menu">
+            <!-- 유저 아이콘 -->
+            <div class="icon-box">
+                <a href="#"><i class="fa fa-user"></i></a>
+            </div>
+
+            <nav>
+                <!-- gnb : global navgation bar -->
+                <ul id="gnb">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/board">Board</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </nav>
+
+            <!-- 메뉴 아이콘 -->
+            <div class="icon-box">
+                <a href="#" id="btn-menu"><i class="fa fa-bars"></i></a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- section1 -->
+    <section id="main" class="container">
+        <div class="slide">
+            <div class="item"><img src="img/s01.jpg" alt="1"></div>
+            <div class="item"><img src="img/s02.jpg" alt="2"></div>
+            <div class="item"><img src="img/s03.jpg" alt="3"></div>
+        </div>
+    </section>
+    
+    <!-- section2 -->
+    <section id="recent" class="container">
+        <div class="card-list">
+            <!-- 카드 -->
+            <div class="card">
+                <div class="img-box">
+                    <a href="#">
+                        <img src="img/s01.jpg" alt="1">
+                    </a>
+                </div>
+                <div class="content-box">
+                    <h3 class="title">최신 이미지 01</h3>
+                    <p class="info">
+                        최신 이미지01 입니다. <br>
+                        새로운 게시물을 감상해보세요.
+                    </p>
+                    <div class="etc-box">
+                        <div class="item">
+                            <span class="date">2023-06-06</span>
+                        </div>
+                        <div class="item">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 카드 -->
+            <div class="card">
+                <div class="img-box">
+                    <a href="#">
+                        <img src="img/s02.jpg" alt="1">
+                    </a>
+                </div>
+                <div class="content-box">
+                    <h3 class="title">최신 이미지 02</h3>
+                    <p class="info">
+                        최신 이미지01 입니다. <br>
+                        새로운 게시물을 감상해보세요.
+                    </p>
+                    <div class="etc-box">
+                        <div class="item">
+                            <span class="date">2023-06-06</span>
+                        </div>
+                        <div class="item">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 카드 -->
+            <div class="card">
+                <div class="img-box">
+                    <a href="#">
+                        <img src="img/s03.jpg" alt="1">
+                    </a>
+                </div>
+                <div class="content-box">
+                    <h3 class="title">최신 이미지 03</h3>
+                    <p class="info">
+                        최신 이미지01 입니다. <br>
+                        새로운 게시물을 감상해보세요.
+                    </p>
+                    <div class="etc-box">
+                        <div class="item">
+                            <span class="date">2023-06-06</span>
+                        </div>
+                        <div class="item">
+                            <a href="#"><i class="fa fa-heart-o"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- section3 -->
+    <section id="info1" class="container info">
+        <div class="img-box">
+            <a href="#">
+                <img src="img/s04.jpg" alt="">
+            </a>
+        </div>
+        <div class="content-box">
+            <div class="inner">
+                <h3 class="info-title">Title - Hello Text 001</h3>
+                <p class="info-content">
+                    empty content. empty content. <br>
+                    empty content.
+                </p>
+                <div class="btn-box">
+                    <a href="#" class="btn">Button 001</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section4 -->
+    <section id="info2" class="container info">
+        <div class="img-box">
+            <a href="#">
+                <img src="img/s05.jpg" alt="">
+            </a>
+        </div>
+        <div class="content-box">
+            <div class="inner">
+                <h3 class="info-title">Title - Hello Text 002</h3>
+                <p class="info-content">
+                    empty content. empty content. <br>
+                    empty content.
+                </p>
+                <div class="btn-box">
+                    <a href="#" class="btn">Button 002</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section5 -->
+    <section id="map" class="container">
+          <!-- 지도 영역 -->
+    <div id="map" style="width:800px;height:500px; margin: 0 auto;"></div>
+    <div id="roadview" style="width:800px;height:400px; margin: 0 auto;"></div>
+
+    <p id="position"></p>
+
+    <!-- 카카오맵 API -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4556eb4dcb8771cbd42f978e5273aadd"></script>
+
+    <script>
+
+        let lat = 37.51827474229924     // 위도
+        let lon = 126.9064266450123    // 경도
+
+        // let lat = 37.5207569     // 위도
+        // let lon = 126.9003409    // 경도
+
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(lat, lon), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        // 지도를 생성한다
+        var map = new kakao.maps.Map(container, options); 
+
+        // 지도 타입 변경 컨트롤을 생성한다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+
+        // 지도 상단 우측에 타입 변경 컨트롤을 추가한다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT)
+
+        // 지도에 확대/축소 컨트롤을 생성한다
+        var zoomControl = new kakao.maps.ZoomControl();
+
+        // 지도의 우측에 확대/축소 컨트롤을 추가한다
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT)
+
+        // 지도에 마커를 생성하고 표시한다
+		var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(lat, lon), // 마커의 좌표
+		    map: map                                    // 마커를 표시할 지도 객체
+		});
+
+        // 지도 클릭 이벤트를 등록한다 (좌클릭 : click, 우클릭 : rightclick, 더블클릭 : dblclick)
+		kakao.maps.event.addListener(map, 'click', function (mouseEvent) {
+			console.log('지도에서 클릭한 위치의 좌표는 ' + mouseEvent.latLng.toString() + ' 입니다.');
+
+            let position = document.getElementById('position')            
+            // 위도,경도 정보
+            let latlng = mouseEvent.latLng
+            let lat = latlng.getLat()       // 위도
+            let lng = latlng.getLng()       // 경도
+            let msg = `위도 : ${lat}, 경도 : ${lng}`
+
+            position.innerHTML = msg
+		});	
+
+
+        // 커스텀 오버레이를 생성하고 지도에 표시한다
+		var customOverlay = new kakao.maps.CustomOverlay({
+			map: map,
+			content: '<div class="my-place">휴먼교육센터</div>', 
+			position: new kakao.maps.LatLng(lat, lon), // 커스텀 오버레이를 표시할 좌표
+			xAnchor: 0.5, // 컨텐츠의 x 위치
+			yAnchor: 0 // 컨텐츠의 y 위치
+		});
+        </script>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+            <div class="site-map">
+                <ul>
+                    <li><a href="#">Board</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">자유 게시판</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">갤러리01</a></li>
+                    <li><a href="#">갤러리02</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">사이트 소개</a></li>
+                </ul>
+            </div>
+            <div class="family">
+                <select name="family" id="family">
+                    <option value="1">네이버</option>
+                    <option value="2">카카오</option>
+                    <option value="3">유튜브</option>
+                </select>
+            </div>
+        </div>
+        <p class="copy">
+            Copyright All rights reserved.
+        </p>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></>
+    <!-- slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- kakao -->
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4d9c4ccd55af22e749af292453ba1fa9"></script>
+    
+    <scrip src="js/script.js"></script>
+</body>
+</html>
