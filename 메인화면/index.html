@@ -155,7 +155,7 @@
                     empty content.
                 </p>
                 <div class="btn-box">
-                    <a href="#" class="btn">Button 001</a>
+                    <a href="#" id="btn" class="btn">Button 001</a>
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                     empty content.
                 </p>
                 <div class="btn-box">
-                    <a href="#" class="btn">Button 002</a>
+                    <a href="#" id="btn2" class="btn">Button 002</a>
                 </div>
             </div>
         </div>
@@ -243,7 +243,6 @@
             position.innerHTML = msg
 		});	
 
-
         // 커스텀 오버레이를 생성하고 지도에 표시한다
 		var customOverlay = new kakao.maps.CustomOverlay({
 			map: map,
@@ -254,6 +253,7 @@
 		});
         </script>
     </section>
+
 
     <!-- footer -->
     <footer>
@@ -289,12 +289,13 @@
 
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <!-- slick -->
     <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- kakao -->
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4d9c4ccd55af22e749af292453ba1fa9"></script>
-    
-    <scrip src="js/script.js"></script>
+    <!-- script -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+

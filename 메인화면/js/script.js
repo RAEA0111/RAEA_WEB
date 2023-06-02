@@ -7,6 +7,8 @@ $(function() {
         slidesToShow: 1,
     })
 
+    
+
     let lat = 37.51827474229924     // 위도
     let lon = 126.9064266450123    // 경도
 
@@ -74,5 +76,14 @@ $(function() {
         $('.side-bar').toggleClass('active')
     })
    
+    const btn = document.getElementById('btn');
+    btn.onclick = function() {
+        alert('Click');
+    };
+
+    const btn2 = document.getElementById('btn2');
+    btn2.onclick = function() {
+    alert('Click');
+};
 
 })

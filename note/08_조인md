@@ -1,0 +1,35 @@
+
+
+- RIGHT OUTER JOIN
+: 오른쪽 테이블을 먼저 읽어드린 후,
+  조인 조건에 일치하는 왼쪽 테이블을 함께 조회하는 것
+  * 조건에 만족하지 않는, 왼쪽 테이블의 데이터는 NULL로 조회된다.
+
+  1) ANSI - 테이블1 A RIGHT [OUTER] JOIN 테이블2 B ON 조인조건;
+  2) (+)  - WHERE A. 공통컬럼 (+) = B.공통컬럼
+
+- FULL OUTER JOIN
+  : 조인 조건에 일치하는 양쪽 테이블의 데이터를 조합하여 조회하는 것
+  * 조건에 만족하지 않는, 양쪽에 데이터는 NULL로 조회된다.
+
+    테이블1 A FULL [OUTER] JOIN 테이블2 B ON 조인조건;
+
+- 카타시안 조인 (Cartesian; CATASIAN PRODUCT)
+    : WHERE 절에 조인 조건이 없는 조인
+    * A 테이블의 데이터 건수 : X
+    * B 테이블의 데이터 건수 : Y
+    * 결과 건수 : X * Y ( 두 테이블의 곱)
+    ex) SELECT *
+        FROM employees e
+            ,departments d;
+
+* 카타시안 조인을 ANSI 문법에서는 CROSS 조인이라고 한다
+ex) SELECT *
+    FROM employees e
+         CROSS JOIN departments d;
+
+-- FULL OUTER JOIN
+SELECT * 
+  FROM employee e
+      ,department d
+WHERE e.dept_code = d.dept_id;

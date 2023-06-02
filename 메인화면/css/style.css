@@ -196,6 +196,8 @@ section.info .content-box .inner .btn-box {
 #map {
     margin: 20px auto;
  
+    width: 50%;
+    height: 400px;
     padding: 12px 24px;
     background-color: cornflowerblue;
     border-radius: 10px;
